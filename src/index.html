@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs" class="page">
+@include('partials/head.html',{
+"title": "Masáže k Vám domů | Simona Benešova",
+"description": "Nabízím masáže s možností u Vás doma. Sportovní masáž.\
+Relaxační masáž, masáž celého těla, břicha,\
+relaxační masáž masáž ruka,\
+sportovní masáž, masáž zada, masáž hýždě",
+"keywords": "masáže, masáže domů, masáže dojezd, masáž \
+u klienta, masáž noha zezadu, masáž noha zepředu,zákazníka"
+})
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html',{
+    "index": "active-page",
+    "price": "",
+    "contact": ""
+    })
+    <main class="main">
+      <div class="container">
+        <div class="about">
+          <h2 class="about__title">VAŠE SNY O ODPOČINKU SE SE MNOU STANOU SKUTEČNOSTÍ...</h2>
+          <p class="about__text">Ke každému zákazníkovi přistupuji individuálně a diskrétně, kdy po prvotní konzultaci
+            zdravotního stavu
+            doporučím nejvhodnější typ masáže.</p>
+        </div>
+        <section class="services">
+          <h2 class="services__title" style="display: none;">Služby</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <div class="services__card">
+                <!-- <div class="card__img__wrapper">
+                  <picture>
+                    <source srcset="img/9.webp" type="image/webp">
+                    <img loading="lazy" src="img/9.png" class="image" width="370" height="450" alt="">
+                  </picture>
+                </div> -->
+                <div class="card__info">
+                  <article class="card__text">
+                    <h3 class="card__title">Relaxační masáž</h3>
+                    <p>
+                      Relaxační masáže slouží k uvolnění těla a mysli, odstraňují stres a napětí, zmírňují bolesti zad,
+                      ztuhlost šíje, přináší zklidnění a celkově osvěžují celé tělo.
+                    </p>
+                    <p>
+                      Prostřednictvím měkkých technik
+                      spolu s vonnými nejkvalitnějšími aromatickými oleji, navodí stav vnitřní harmonie a přinese Vám
+                      uvolnění těla i mysli.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </li>
+
+            <li class="services__item">
+              <div class="services__card">
+                <!-- <div class="card__img__wrapper">
+                  <picture>
+                    <source srcset="img/4.webp" type="image/webp">
+                    <img loading="lazy" src="img/4.png" class="image" width="370" height="450" alt="">
+                  </picture>
+                </div> -->
+                <div class="card__info">
+                  <article class="card__text">
+                    <h3 class="card__title">Sportovní masáž</h3>
+                    <p>
+                      Sportovní masáž je masáž složená z uspořádaného souboru vhodných masérských hmatů, které mají
+                      připravit sportovce jak z fyzické tak z psychické stránky na podání určitého sportovního výkonu,
+                      popřípadě mají za úkol zbavit sportovce únavy a přispět k jeho zotavení.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </li>
+
+            <li class="services__item">
+              <div class="services__card">
+                <!-- <div class="card__img__wrapper">
+                  <picture>
+                    <source srcset="img/4.webp" type="image/webp">
+                    <img loading="lazy" src="img/4.png" class="image" width="370" height="450" alt="">
+                  </picture>
+                </div> -->
+                <div class="card__info">
+                  <article class="card__text">
+                    <h3 class="card__title">Používám oleje</h3>
+                    <p>
+                      Používám oleje Green Idea (Topvet)
+                      Český výrobce přírodních olejů a kosmetiky.
+                      Výrobce používá suroviny nejvyšší kvality. Záleží mu na životním prostředí a používá
+                      recyklovatelné obaly.
+                      Oleje mám oblíbené, protože výrobce je držitelem certifikátu NaTrue, což znamená že oleje obsahují
+                      pouze složky přírodního původu a v Bio kvalitě.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </li>
+
+            <li class="services__item">
+              <div class="services__card">
+                <div class="card__img__osvedceni">
+                  <picture>
+                    <source srcset="img/osvedceni.webp" type="image/webp">
+                    <img loading="lazy" src="img/osvedceni.png" class="image"
+                      alt="Osvětlení  o získání  profesni  kvalifikace  Simona Benešová">
+                  </picture>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </section>
+      </div>
+    </main>
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>
