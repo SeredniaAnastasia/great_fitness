@@ -1,3 +1,114 @@
 .site-container {
-  .header {}
+  .header {
+    background-image: url('../img/header_main-img.jpg');
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1920 / 832;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 25px;
+
+    &__top {
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    &__btn {
+      position: relative;
+      @extend %Inter-600;
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--white);
+      background-color: var(--light-green);
+      border: none;
+      border-radius: 6px;
+      padding: 10px 16px 10px 32px;
+
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        background-image: url('../img/svg/cart.svg');
+        position: absolute;
+        width: 14px;
+        height: 15px;
+        left: 10px;
+      }
+    }
+
+    &__main {
+      padding-top: 100px;
+    }
+
+    &__title {
+      // @extend %Fredoka-500;
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 71px;
+      max-width: 540px;
+      color: var(--light-gray);
+      margin-bottom: 48px;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      @extend %Inter-400;
+      font-size: 16px;
+      max-width: 540px;
+      margin-bottom: 48px;
+      line-height: 34px;
+      color: var(--light-gray);
+    }
+
+    &__buttons {
+      @extend %Inter-600;
+      font-size: 16px;
+      display: flex;
+      gap: 10px;
+    }
+
+    &__book {
+      border-radius: 6px;
+      border: none;
+      padding: 16px 24px;
+      color: var(--white);
+      background-color: var(--light-green);
+      transition: background-color .3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--gray);
+        background-color: transparent;
+      }
+    }
+
+    &__contact {
+      position: relative;
+      border-radius: 6px;
+      border: none;
+      padding: 16px 45px 16px 24px;
+      color: var(--gray);
+      background-color: transparent;
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--light-green);
+        color: var(--white);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../img/svg/ph_caret-circle-right-light.svg');
+        width: 20px;
+        height: 20px;
+        right: 13px;
+        top: 18px;
+      }
+    }
+  }
 }

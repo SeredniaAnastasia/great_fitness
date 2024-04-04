@@ -1,0 +1,59 @@
+.menu {}
+
+.burger {}
+
+.menu__btn {}
+
+.burger__line {}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+
+.menu-item {
+  // width: 100%;
+  // flex-basis: 120px;
+
+  // width: 90px;
+}
+
+.menu-link {
+  @extend %Inter-500;
+  font-size: 16px;
+  color: var(--gray);
+  line-height: 16px;
+  transition: font-weight .3s ease-in-out;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: font-weight 0.3s ease-in-out;
+
+  &:hover {
+    font-weight: 600;
+    // transform: scale(0.9);
+    /* Увеличение размера текста */
+  }
+}
+
+
+.submenu-list {}
+
+.submenu-item {}
+
+.submenu-click-parent {
+  position: relative;
+}
+
+.submenu-click-list {
+  position: absolute;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: scaleY(0) translateY(-100%);
+  opacity: 0;
+}
+
+.submenu-click-list.open-click {
+  transform: scaleY(1) translateY(0%);
+  opacity: 1;
+}

@@ -1,8 +1,9 @@
 // базовые подключения
-@import "vars";
-@import "bootstrap.min";
-@import "mixins";
+@import "mixins/font-face";
 @import "fonts";
+@import "vars";
+// // // @import "bootstrap.min";
+@import "mixins";
 @import "settings";
 @import "mixins/validate";
 @import "mixins/seting";
@@ -11,3 +12,5 @@
 @import "./components/header";
 @import "./components/logo";
 @import "./components/footer";
+@import "./components/menu";
+@import "./components/services";

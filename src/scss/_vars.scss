@@ -1,20 +1,6 @@
 // если вы хотите использовать sass-переменные - удалите root
 // colors
 
-%Asap-400 {
-  font-family: "Asap-Regular", sans-serif;
-  font-weight: 400;
-}
-
-%Asap-600 {
-  font-family: "Asap-SemiBold", sans-serif;
-  font-weight: 600;
-}
-
-%Inter-200 {
-  font-family: "Inter-ExtraLight", sans-serif;
-  font-weight: 200;
-}
 
 %Inter-500 {
   font-family: "Inter-Medium", sans-serif;
@@ -26,46 +12,55 @@
   font-weight: 400;
 }
 
-%Karma-500 {
-  font-family: "Karma-Medium", sans-serif;
+%Inter-600 {
+  font-family: "Inter-SemiBold", sans-serif;
+  font-weight: 600;
+}
+
+%Inter-300 {
+  font-family: "Inter-Light", sans-serif;
+  font-weight: 300;
+}
+
+%Inter-700 {
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%Roboto-400 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%Roboto-700 {
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%Fredoka-500 {
+  font-family: "Fredoka-Medium", sans-serif;
   font-weight: 500;
 }
 
-%OpenSans-400 {
-  font-family: "OpenSans-Regular", sans-serif;
-  font-weight: 400;
-}
-
-%KaushanScript-400 {
-  font-family: "KaushanScript-Regular", cursive;
-  font-weight: 400;
-}
-
-%GreatVibes-400 {
-  font-family: "GreatVibes-Regular", cursive;
-  font-weight: 400;
-}
-
-%PatrickHand-400 {
-  font-family: "PatrickHand-Regular", cursive;
-  font-weight: 400;
-}
-
-%Kalam-400 {
-  font-family: "Kalam-Regular", cursive;
-  font-weight: 400;
-}
-
 :root {
+
+  --index: calc(1vw + 1vh);
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1575px;
+  --font-family: "Inter", sans-serif;
+  --content-width: 1920px;
   --container-offset: 10px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --content-inner-width: 1320px;
+  --container-inner-offset: 10px;
+  --container-inner-width: calc(var(--content-inner-width) + (var(--container-inner-offset) * 2));
 
   // colors
   --white: #fff;
   --black: #000;
-  --light-green: #7d9457;
-  --dark-green: #506233;
+  --gray: #343A40;
+  --light-gray: #495057;
+  --light-green: #5F6F52;
+  --light: #F6F5F4;
+
 }
