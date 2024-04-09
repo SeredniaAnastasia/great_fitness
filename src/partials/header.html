@@ -9,25 +9,33 @@
         <span class="burger__line"></span>
       </button>
       <ul class="menu-list" data-menu>
-        <li class="menu-item">
+        <li class="menu-item" data-menu-item>
           <a class="menu-link" href="index.html">Home</a>
         </li>
         <li class="menu-item submenu-click-parent">
-          <button class="menu-link submenu-click" href="#">Services</button>
-          <ul class="submenu-list submenu-click-list">
-            <li class="submenu-item"><a href="#">Spa Area</a></li>
-            <li class="submenu-item"><a href="#">Changing Rooms</a></li>
-            <li class="submenu-item"><a href="#">Free Lessons</a></li>
-            <li class="submenu-item"><a href="#">Free Rugs</a></li>
+          <button class="menu-link submenu-click" aria-expanded="false" aria-haspopup="menu-services"
+            aria-controls="Services">Services</button>
+          <ul class="submenu-list submenu-click-list" role="menu-services" id="Services">
+            <li class="submenu-item" data-menu-item><a href="#">Spa Area</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Changing Rooms</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Lessons</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Rugs</a></li>
           </ul>
         </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Our Facility</a>
+        <li class="menu-item submenu-click-parent">
+          <button class="menu-link submenu-click" aria-expanded="false" aria-haspopup="menu=facility"
+            aria-controls="Facility">Our Facility</button>
+          <ul class="submenu-list submenu-click-list" role="menu-facility" id="Facility">
+            <li class="submenu-item" data-menu-item><a href="#">Spa Area</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Changing Rooms</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Lessons</a></li>
+            <li class="submenu-item" data-menu-item><a href="#">Free Rugs</a></li>
+          </ul>
         </li>
-        <li class="menu-item">
+        <li class="menu-item" data-menu-item>
           <a class="menu-link" href="#">About</a>
         </li>
-        <li class="menu-item">
+        <li class="menu-item" data-menu-item>
           <a class="menu-link" href="#">Contact</a>
         </li>
       </ul>
@@ -44,8 +52,8 @@
     <p class="header__text">Welcome to Great Fitness, Los Angeles' premier destination for yoga and fitness enthusiasts.
       Nestled in the vibrant heart of the city, we offer a sanctuary where mind, body, and spirit align.</p>
     <div class="header__buttons">
-      <button class="header__book">Book A Session</button>
-      <button class="header__contact">Contact Us</button>
+      <button class="header__book button">Book A Session</button>
+      <button class="header__contact button__contact">Contact Us</button>
     </div>
   </div>
 

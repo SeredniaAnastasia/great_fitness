@@ -13,6 +13,75 @@ html {
   @extend %Inter-400;
 }
 
+
+.title {
+  @extend %Fredoka-500;
+  font-size: clamp(1.75rem, 1.481vw + 1.472rem, 3.25rem);
+  line-height: normal;
+  text-align: center;
+  color: var(--gray);
+}
+
+
+
+.subtitle {
+  @extend %Inter-400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 45px;
+}
+
+.button {
+  margin: 0 auto;
+  @extend %Inter-600;
+  font-size: 16px;
+  color: var(--white);
+  padding: 16px 24px;
+  border-radius: 6px;
+  background-color: var(--light-green);
+  border: none;
+  display: block;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    color: var(--gray);
+    background-color: transparent;
+  }
+}
+
+.button__contact {
+  margin: 0 auto;
+  @extend %Inter-600;
+  font-size: 16px;
+  position: relative;
+  border-radius: 6px;
+  border: none;
+  padding: 16px 45px 16px 24px;
+  color: var(--gray);
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--light-green);
+    color: var(--white);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url('../img/svg/ph_caret-circle-right-light.svg');
+    width: 20px;
+    height: 20px;
+    right: 13px;
+    top: 18px;
+  }
+}
+
+
 // body::before {
 //   content: "";
 //   position: fixed;
@@ -24,11 +93,11 @@ html {
 //   background: url("../img/20-2x.jpg") no-repeat 50% / cover;
 // }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
 
 .page {
   height: 100%;

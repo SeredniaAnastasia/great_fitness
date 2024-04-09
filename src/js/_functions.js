@@ -34,8 +34,9 @@ import './functions/burger';
 // const modal = new GraphModal();
 
 // Реализация табов
-// import GraphTabs from 'graph-tabs';
-// const tabs = new GraphTabs('tab');
+import GraphTabs from 'graph-tabs';
+const tabs = new GraphTabs('tab');
+console.log(tabs)
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
@@ -50,11 +51,45 @@ import './functions/burger';
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
+Swiper.use([Navigation, Pagination, Autoplay]);
+const swiper = new Swiper(".swiper-container", {
+  // breakpoints: {
+  //   // when window width is >= 320px
+  //   320: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 20
+  //   },
+  //   // when window width is >= 480px
+  //   480: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 30
+  //   },
+  //   // when window width is >= 640px
+  //   640: {
+  //     slidesPerView: 4,
+  //     spaceBetween: 40
+  //   }
+  // },
+  // centerInsufficientSlides: true,
+  // centeredSlides: true,
+  slidesPerView: "auto",
+  spaceBetween: 48,
+  // loop: true, // Включення циклічної прокрутки
+  // centeredSlides: true, // Позиціонує активний слайд по центру
+  // allowSlidePrev: true,
+  // allowSlideNext: true,
+  // autoplay: {
+  //   delay: 1000,
+  // },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // grid: {
+  //   rows: 3,
+  // },
+});
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';

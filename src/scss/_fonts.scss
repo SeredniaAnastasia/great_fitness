@@ -1,36 +1,13 @@
 // @include font-face("Muller", "/fonts/MullerRegular", 400, normal);
-@include font-face-two("Inter-Medium", "../fonts/Inter-Medium.woff", "../fonts/Inter-Medium.woff2", 500, normal);
-@include font-face-two("Inter-Regular", "../fonts/Inter-Regular.woff", "../fonts/Inter-Regular.woff2", 400, normal);
-@include font-face-two("Inter-Bold", "../fonts/Inter-Bold.woff", "../fonts/Inter-Bold.woff2", 700, normal);
-@include font-face-two("Inter-Light", "../fonts/Inter-light.woff", "../fonts/Inter-light.woff2", 300, normal);
-@include font-face-two("Inter-SemiBold", "../fonts/Inter-SemiBold.woff", "../fonts/Inter-SemiBold.woff2", 600, normal);
-@include font-face-two("Fredoka-Medium", "../fonts/Fredoka-Medium.woff", "../fonts/Fredoka-Medium.woff2", 500, normal);
-@include font-face-two("Roboto-Regular", "../fonts/Roboto-Regular.woff", "../fonts/Roboto-Regular.woff2", 400, normal);
-@include font-face-two("Roboto-Bold", "../fonts/Roboto-Bold.woff", "../fonts/Roboto-Bold.woff2", 700, normal);
+@include font-face-two("Inter-Medium", "Inter-Medium", "Inter-Medium", 500, normal);
+@include font-face-two("Inter-Regular", "Inter-Regular", "Inter-Regular", 400, normal);
+@include font-face-two("Inter-Bold", "Inter-Bold", "Inter-Bold", 700, normal);
+@include font-face-two("Inter-Light", "Inter-light", "Inter-light", 300, normal);
+@include font-face-two("Inter-SemiBold", "Inter-SemiBold", "Inter-SemiBold", 600, normal);
+@include font-face-two("Fredoka-Medium", "Fredoka-Medium", "Fredoka-Medium", 500, normal);
+@include font-face-two("Roboto-Regular", "Roboto-Regular", "Roboto-Regular", 400, normal);
+@include font-face-two("Roboto-Bold", "Roboto-Bold", "Roboto-Bold", 700, normal);
 
-
-
-// @font-face {
-//   src:
-//     local("Fredoka-Medium"),
-//     url("../fonts/Fredoka-Medium.woff2") format("embedded-opentype"),
-//     url("../fonts/Fredoka-Medium.woff") format("embedded-opentype");
-//   font-family: "Fredoka-Medium";
-//   font-weight: 500;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   src:
-//     local("Asap-SemiBold"),
-//     url("../fonts/Asap-SemiBold.woff2") format("embedded-opentype"),
-//     url("../fonts/Asap-SemiBold.woff") format("embedded-opentype");
-//   font-family: "Asap-SemiBold";
-//   font-weight: 600;
-//   font-style: normal;
-//   font-display: swap;
-// }
 
 // @font-face {
 //   src:

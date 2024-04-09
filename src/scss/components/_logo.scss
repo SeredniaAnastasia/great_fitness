@@ -7,3 +7,10 @@
     height: 100%;
   }
 }
+
+@media (max-width: 1920px) {
+  .logo {
+    width: calc(var(--index)* 5.9);
+    height: calc(var(--index)* 1.2);
+  }
+}
