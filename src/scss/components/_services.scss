@@ -13,8 +13,13 @@
       margin-bottom: 45px;
     }
 
+    &__subtitle {
+      margin-bottom: 0;
+    }
+
     &__item {
       border-radius: 30px;
+      margin: 0 auto;
       padding: 35px;
       width: 294px;
       text-align: center;
@@ -64,7 +69,8 @@
 
     &__item__hide {
       position: absolute;
-      left: -30px;
+      left: 50%;
+      transform: translateX(-50%);
       top: -25px;
       border-radius: 30px;
       padding: 95px 35px;
@@ -104,17 +110,18 @@
     }
 
     .swiper-container {
-      width: 80%;
+      width: 100%;
+      overflow: hidden;
     }
 
     .swiper-wrapper {
-      margin-left: 200px;
+      margin-left: 341px;
+      padding-top: 45px;
     }
 
     .swiper-slide {
-      width: 294px !important;
-
-      /* задаємо ширину карточки */
+      max-width: max-content;
+      width: 100%;
     }
 
     .swiper-button {
@@ -131,6 +138,7 @@
         width: 45px;
         height: 45px;
         background-color: transparent;
+        cursor: pointer;
       }
     }
 
@@ -149,7 +157,11 @@
   .site-container {
     .services {
       .swiper-wrapper {
-        margin-left: 20px;
+        margin-left: 0;
+      }
+
+      .swiper-slide {
+        max-width: initial;
       }
     }
   }
@@ -159,8 +171,8 @@
   .site-container {
     .services {
       &__item {
-        padding: 20px;
-        width: 260px;
+        // padding: 20px;
+        // width: 260px;
       }
 
       &__item__hide {
@@ -169,6 +181,56 @@
         padding: 50px 25px;
         width: 290px;
         height: 400px;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 380px) {
+  .site-container {
+    .services {
+      // .swiper-slide {
+      //   width: 260px !important;
+      // }
+
+      &__item-img {
+        margin-bottom: 15px;
+        max-width: 24%;
+      }
+
+      &__item-title {
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      &__item-subtitle {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 23px;
+      }
+
+      &__item {
+        // padding: 20px;
+        // margin-right: 38px !important;
+      }
+
+      &__item__hide {
+        left: 1px;
+        top: -34px;
+        padding: 50px 20px;
+        width: 261px;
+        height: 360px;
+      }
+
+      &__item__hide-title {
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+
+      &__item__hide-subtitle {
+        font-size: 14px;
       }
     }
   }

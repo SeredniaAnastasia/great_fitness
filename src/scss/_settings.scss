@@ -1,5 +1,5 @@
 html {
-  box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 
 .page__body {
@@ -159,6 +159,10 @@ img {
   width: 1px;
   height: 1px;
   clip: rect(0 0 0 0);
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .container {
